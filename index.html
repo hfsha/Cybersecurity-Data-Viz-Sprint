@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CISA KEV: Top Exploited Products (2024-2025)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/modern-style.css">
+    <link rel="stylesheet" href="assets/css/modern-chart.css">
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="dashboard-container">
+        <header class="dashboard-header">
+            <h1>CISA Known Exploited Vulnerabilities</h1>
+            <h2>Top Exploited Products (2024-2025)</h2>
+        </header>
+        
+        <div class="controls">
+            <div class="filter-control">
+                <label for="topN">Show Top:</label>
+                <input type="range" id="topN" min="5" max="20" value="10" step="1">
+                <span id="topNValue">10</span>
+            </div>
+            <div class="filter-control">
+                <label for="timeFilter">Time Period:</label>
+                <select id="timeFilter">
+                    <option value="all">All Time</option>
+                    <option value="2025">2025 Only</option>
+                    <option value="2024">2024 Only</option>
+                    <option value="last6m">Last 6 Months</option>
+                </select>
+            </div>
+        </div>
+        
+        <div class="dashboard-content">
+            <div class="chart-container">
+                <canvas id="mainChart"></canvas>
+            </div>
+            
+            <div class="info-panel">
+                <div class="stats-card">
+                    <h3>Total Exploits</h3>
+                    <div class="stat-value" id="totalExploits">0</div>
+                </div>
+                <div class="stats-card">
+                    <h3>Unique Products</h3>
+                    <div class="stat-value" id="uniqueProducts">0</div>
+                </div>
+                <div class="stats-card">
+                    <h3>Top Vendor</h3>
+                    <div class="stat-value" id="topVendor">-</div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="data-table">
+            <h3>Recent Exploits</h3>
+            <div class="table-responsive">
+                <table id="exploitsTable" class="responsive-table">
+                    <thead>
+                        <tr>
+                            <th>CVE ID</th>
+                            <th>Vendor</th>
+                            <th>Product</th>
+                            <th>Date Added</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        
+        <footer class="dashboard-footer">
+            <p>Data Source: CISA Known Exploited Vulnerabilities Catalog | Last Updated: June 2025</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/utils.js" type="module"></script>
+    <script src="assets/js/chart.js" type="module"></script>
+    <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>
