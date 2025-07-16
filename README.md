@@ -1,3 +1,46 @@
+# 🚀 CISA Known Exploited Vulnerabilities Dashboard
+
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Click%20Here-blue?style=for-the-badge)](https://humancc.site/shahidatulhidayah/Cybersecurity-Data-Viz-Sprint/index.html)
+
+**Explore the top exploited products and vendors from the CISA Known Exploited Vulnerabilities Catalog with a beautiful, interactive dashboard!**
+
+---
+
+## 🌐 Live Demo
+
+👉 **[Check out the dashboard!](https://humancc.site/shahidatulhidayah/Cybersecurity-Data-Viz-Sprint/index.html)**
+
+---
+
+## 📊 What is this project?
+
+This project is a modern, interactive data visualization dashboard that lets you explore the most exploited products and vendors from the CISA Known Exploited Vulnerabilities (KEV) Catalog. It’s designed for cybersecurity enthusiasts, professionals, and anyone curious about real-world software vulnerabilities.
+
+---
+
+## ✨ Features
+
+- **Dynamic Bar Chart:**  
+  Instantly see the top exploited products, with a fun color palette and smooth animations.
+
+- **Time Filtering:**  
+  Filter data by year (2024, 2025), last 6 months, or view all time.
+
+- **Top N Selector:**  
+  Use the slider to choose how many top products to display (from 5 to 20).
+
+- **Key Stats at a Glance:**  
+  - Total Exploits
+  - Unique Products
+  - Top Vendor
+
+- **Recent Exploits Table:**  
+  See the latest 10 vulnerabilities, including CVE ID, vendor, product, and date added.
+
+- **Responsive & Modern UI:**  
+  Built with a glassmorphism-inspired design, smooth transitions, and mobile-friendly layout.
+
+
 ---
 
 ## 📦 How to Run Locally
