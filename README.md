@@ -81,7 +81,7 @@ Or, double-click `start-server.bat` if you’re on Windows!
 ## 🎉 Credits & Inspiration
 
 - Dashboard design inspired by modern data viz trends and glassmorphism.
-- Data from CISA, visualized for the community by [Shahidatul Hidayah](https://github.com/shahidatulhidayah).
+- Data from CISA, visualized for the community.
 
 ---
 
